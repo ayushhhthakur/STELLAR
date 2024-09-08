@@ -1,0 +1,9 @@
+.title {
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    text-align: center; /* To center the text within the title */
+  }
+  

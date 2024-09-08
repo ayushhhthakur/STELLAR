@@ -1,0 +1,25 @@
+/* src/styles/styles.css */
+body {
+  font-family: "Josefin Sans", sans-serif;
+    background-color: #ffffff;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* In your CSS file */
+
+

@@ -1,0 +1,123 @@
+/* Styles for larger screens (desktop) */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  display: block;
+  z-index: 1;
+  height: 100vh; /* Adjust height as needed */
+  overflow: hidden; /* Ensure content doesn't overflow */
+  padding: 110px 0px 20px 30px;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.08; 
+  object-fit: cover; /* Ensure the image covers the container */
+  z-index: 0; /* Place image behind the text */
+}
+
+.h1tag {
+  position: relative;
+  top: 65px;
+  font-size: 4rem;
+  line-height: 1.2em;
+  left: 0;
+  padding-left: 20px; /* Add space between the text and left edge */
+  z-index: 3;
+  color: #010101; /* Adjust the text color if needed */
+  margin-bottom: 10px;
+  max-width: 58%; /* Prevent overflow */
+  text-align: left; /* Align text to the left */
+}
+
+.p {
+  color: #010101;
+  position: relative;
+  top: 60px;
+  left: 25px;
+  font-size: 17px;
+  line-height: 19px;
+  max-width: 52%;
+  justify-content: center;
+  align-items: center;
+  text-align:start;
+  
+}
+
+.buttons {
+  position: relative;
+  top: 12%;
+  display: block;
+  margin: 5px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 5px;
+  max-width: 50%;
+  padding: 10px;
+}
+
+.background-image2 {
+  width: 30%;
+  height: 75%;
+  z-index: 100;
+  position: absolute;
+  left: 65%;
+  top: 20%;
+  opacity: 1;
+  border-radius: 5px;
+}
+
+/* Responsive Styles for Mobile Devices */
+
+@media (max-width: 1024px) {
+  .hero-banner {
+    padding: 80px 10px 10px 10px; /* Adjust padding for smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .background-image {
+    display: none;
+    opacity: 0.5; /* Increase opacity for better visibility */
+  }
+
+  .h1tag {
+    margin: auto;
+    font-size: 2.5rem; /* Smaller font size for mobile */
+    top: 20px; /* Adjust position for smaller screens */
+    max-width: 90%; /* Increase max-width for mobile */
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    padding: 10px;
+  }
+
+  .p {
+    font-size: 14px; /* Adjust font size for better readability */
+    line-height: 18px; /* Adjust line-height */
+    max-width: 100%; /* Increase max-width for mobile */
+    left: 0; /* Reset left position */
+    top: 30px; /* Adjust position */
+    justify-content: center;
+    align-items: center;
+    text-align:center
+  }
+
+  .buttons {
+    position: relative;
+    top: 35px;
+    max-width: 90%; /* Increase max-width for mobile */
+    margin: 10px auto; /* Adjust margins */
+    padding: 10px; /* Adjust padding */
+    justify-content: center;
+    align-items: center;
+    text-align:start;
+  }
+
+  .background-image2 {
+    display: none;
+  }
+}
